@@ -100,10 +100,9 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
+    { icon: assets.web_icon, title: 'Desenvolvimento Fullstack', description: 'Integração entre front-end e back-end com Node.js, APIs REST e bancos de dados MySQL.', link: '' },
+    { icon: assets.graphics_icon, title: 'Análise de Dados', description: 'Coleta, limpeza e visualização de dados para gerar insights e apoiar decisões.', link: '' },
+    { icon: assets.ui_icon, title: 'Design e Usabilidade', description: 'Foco na experiência do usuário e boas práticas de interface, unindo estética e funcionalidade.', link: '' },
 ]
 
 export const infoList = [

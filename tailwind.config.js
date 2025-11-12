@@ -1,4 +1,4 @@
-const { NEXT_BODY_SUFFIX } = require('next/dist/lib/constants');
+const { NEXT_BODY_SUFFIX } = require("next/dist/lib/constants");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -19,10 +19,13 @@ module.exports = {
         Outfit: ["Outfit", "sans-serif"],
         Ovo: ["Ovo", "serif"],
       },
-      boxShadow:{
-        'black': '4px 4px 0 #000',
-        'white': '4px 4px 0 #fff',
-      }
+      boxShadow: {
+        black: "4px 4px 0 #000",
+        white: "4px 4px 0 #fff",
+      },
+      gridTemplateColumns: {
+        auto: "repeat(auto-fit, minmax(200px, 1fr))",
+      },
     },
   },
   plugins: [],
