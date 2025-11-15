@@ -1,21 +1,55 @@
 import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Work = ({ isDarkMode }) => {
   return (
-    <div id="work" className="w-full px-[12%] py-10 scroll-mt-20">
-      <h4 className="text-center mb-2 text-lg font-Ovo">Meu portfolio</h4>
-      <h2 className="text-center text-5xl font-Ovo">Meus trabalhos</h2>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      id="work"
+      className="w-full px-[12%] py-10 scroll-mt-20"
+    >
+      <motion.h4
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.3, duration: 0.5 }}
+        className="text-center mb-2 text-lg font-Ovo"
+      >
+        Meu portfolio
+      </motion.h4>
 
-      <p className="text-center max-w-2x1 mx-auto mt-5 mb-12 font-Ovo">
+      <motion.h2
+        initial={{ y: -20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="text-center text-5xl font-Ovo"
+      >
+        Meus trabalhos
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.7, duration: 0.5 }}
+        className="text-center max-w-2x1 mx-auto mt-5 mb-12 font-Ovo"
+      >
         Este é o meu portfólio, aqui você pode conhecer um pouco mais sobre meu
         trabalho, projetos e trajetória na área de tecnologia.
-      </p>
+      </motion.p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5 dark:text-black">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 0.9, duration: 0.6 }}
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 my-10 gap-5 dark:text-black"
+      >
         {workData.map((project, index) => (
-          <div
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
             key={index}
             className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group"
             style={{ backgroundImage: `url(${project.bgImage})` }}
@@ -36,11 +70,14 @@ const Work = ({ isDarkMode }) => {
                 <Image src={assets.send_icon} alt="send icon" className="w-5" />
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      <a
+      <motion.a
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ delay: 1.1, duration: 0.5 }}
         href=""
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
        border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white 
@@ -54,8 +91,8 @@ const Work = ({ isDarkMode }) => {
           alt="Right arrow"
           className="w-4"
         />
-      </a>
-    </div>
+      </motion.a>
+    </motion.div>
   );
 };
 
