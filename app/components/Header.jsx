@@ -23,7 +23,7 @@ const Header = () => {
                 Contact me <Image src={assets.right_arrow_white} alt='' className='w-4' priority quality={95} />
             </a>
 
-            <a href="/sample_resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>
+            <a href="/public/sample_resume.pdf" download className='px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2'>
                 My resume<Image src={assets.download_icon} alt='' className='w-4' priority quality={95} />
             </a>
         </div>
