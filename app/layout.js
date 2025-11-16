@@ -12,13 +12,13 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Portifolio - Micheli Melki",
+  title: "Portifolio | Projects Micheli Melki",
   description: "",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-BR" className="scroll-smooth dark">
+    <html lang="en" className="scroll-smooth dark">
       <body
         className={`${outfit.className} ${ovo.className} antialiased`}
       >
