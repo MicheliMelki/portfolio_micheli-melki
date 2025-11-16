@@ -12,7 +12,7 @@ const Header = () => {
             Hi, I&apos;m Micheli Melki <Image src={assets.hand_icon} alt='' className='w-6' priority quality={95} />
         </h3>
         <h1 className='text-3xl sm:text-6xl lg:text-[66px] font-Ovo'>
-            Frontend web developer based on London.
+            frontend web developer based on London.
         </h1>
         <p className='max-w-2xl mx-auto font-Ovo'>
             I am a frontend developer from California, USA with 10 years of expirience in multiple companies like Microsoft, Tesla and Apple.
