@@ -14,14 +14,14 @@ const ovo = Ovo({
 });
 
 export const metadata = {
-  title: "Micheli Melki - Portfolio",
-  description: "Portfolio profissional",
+  title: "Micheli Melki | Portfolio",
+  description: "",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="pt-br" className={`${outfit.variable} ${ovo.variable}`}>
-      <body className="font-Outfit antialiased">
+    <html lang="pt-br">
+      <body className={`${outfit.variable} ${ovo.variable} antialiased leading-8 overflow-x-hidden`}>
         {children}
       </body>
     </html>
