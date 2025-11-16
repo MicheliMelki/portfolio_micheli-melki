@@ -1,25 +1,21 @@
-const { NEXT_BODY_SUFFIX } = require("next/dist/lib/constants");
-
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+const config = {
   content: [
-    "./app/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{js,jsx,ts,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
-        lightHover: "#FCF4FF",
-        darkHover: "#2A004A",
-        darkTheme: "#11001F",
+        lightHover: "#fcf4ff",
+        darkHover: "#2a004a",
+        darkTheme: "#11001f"
       },
       fontFamily: {
-        Outfit: ["Outfit", "sans-serif"],
-        Ovo: ["Ovo", "serif"],
+        Outfit: ["var(--font-outfit)", "sans-serif"],
+        Ovo: ["var(--font-ovo)", "serif"]
       },
-
       boxShadow: {
         black: "4px 4px 0 #000",
         white: "4px 4px 0 #fff",
@@ -32,3 +28,5 @@ module.exports = {
   darkMode: "selector",
   plugins: [],
 };
+
+export default config;
